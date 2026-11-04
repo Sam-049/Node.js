@@ -1,0 +1,2 @@
+Created using callback in fs
+This line is appended into this file using callback in fs (async way)
