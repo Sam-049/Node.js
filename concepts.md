@@ -1,6 +1,6 @@
-==========================================================================================================================================================
+===================================================================================================================================================
 <SECTION-1: NODE FUNDAMENTALS AND INTERNALS
-==========================================================================================================================================================
+===================================================================================================================================================
 
 # Node.js is a javascript runtime environment outside the browser
 v8 engine is in the browser which helps js code to run
@@ -27,7 +27,7 @@ so basically node is combination of V8 engine and some server side capabilities
  - Always make sure there is only one entry file or root file of the application
    Root file should have the info of entire source code
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+========================================================
 # Important Modules
  - <Process-Objects -> 
  + Representing and providing details about and control over the current node program.
@@ -47,7 +47,7 @@ so basically node is combination of V8 engine and some server side capabilities
  + This is used when we want to run our code after some delay or we want to repeat the code after regular intervals
  + Some imp methods will see here is: settimeout, setinterval, cleartimeout, clearinterval, setimmediate ....
 
- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+========================================================
 # Callbacks
  - These are the function being passed as an argument in another function. Highly important implementation in interview
 
@@ -57,26 +57,38 @@ so basically node is combination of V8 engine and some server side capabilities
 # Async-Await
  - provides a cleaner syntax for working with Promises. It eliminates the .then() mess and handle properly with try catch block
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-# File System Module
- - fs module is a built-in Node.js module that allows you to interact with your operating system's file system.
+========================================================
+ - <File-System-Module ->
+ + fs module is a built-in Node.js module that allows you to interact with your operating system's file system.
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
- # Buffers
- - When we work with raw binary data. Binary data means when we have data stored in bytes. We can use it in reading files, receiving req bodies, working with streams, handling images, pdf files, videos, encrypt and hashing. 
+ - <Buffers ->
+ + When we work with raw binary data. Binary data means when we have data stored in bytes. We can use it in reading files, receiving req bodies, working with streams, handling images, pdf files, videos, encrypt and hashing. 
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
- # URL-Module - (Uniform Resource Locator)
- - This module in Node.js provides utilities for URL resolution and parsing. 
+ - <URL-Module-(Uniform-Resource-Locator) ->
+ + This module in Node.js provides utilities for URL resolution and parsing. 
  + Resolution as in combining baseurl with the relative path of an webpage
  + Parsing is simply opposite. Breaking doen the url into readable component like - protocol, host/domain name, port, path, search parameters
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
- # Event Emitter
- - This tells somewhere an event has occcured and we have to respond to that action. The event may be a click, a keyboard press, or a hover or anything of that sort.
- - This event is going to be listened by event listeners. .on(), .once(), .emit()
+ - <Event-Emitter ->
+ + This tells somewhere an event has occcured and we have to respond to that action. The event may be a click, a keyboard press, or a hover or anything of that sort.
+ + This event is going to be listened by event listeners. .on(), .once(), .emit()
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
- # Streams
- - This is used to handle reading and writing data efficiently by processing it piece by piece (in chunks) rather than loading the entire dataset into memory a once.
+ - <Streams ->
+ + This is used to handle reading and writing data efficiently by processing it piece by piece (in chunks) rather than loading the entire dataset into memory a once.
  
+========================================================
+ # HTTP Module
+ - Its a core built-in module used to transfer data over the Hyper Text Transfer Protocol. 
+ - It allows you to both create an HTTP server (to listen for incoming requests) and act as an HTTP client (to make external API requests) without installing any third-party packages
+
+========================================================
+ # Basic - Routing
+ - this shows how server resonse to particular client request. By using if-else ow else switch where we check the method and pathname and accordingly we open up the page.
+
+========================================================
+ # raw Reading request body, JSON response and calling external API 
+========================================================
+
+- We see some advance internals of Node.js Referring to that files with the flowchat would makes understanding easier (node-advance)
+
+========================================================

@@ -7,6 +7,7 @@ const node_process_1 = __importDefault(require("node:process"));
 const nodeEnv = node_process_1.default.env.NODE_ENV ?? "development";
 console.log(nodeEnv);
 const commandArg = node_process_1.default.argv[2] ?? "start";
+console.log({ commandArg });
 const command = commandArg.startsWith("--")
     ? commandArg.slice(2)
     : commandArg;
