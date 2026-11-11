@@ -1,0 +1,34 @@
+{
+  "name": "detailed backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "01": "tsx src/core-modules/01-process-object.ts",
+    "02": "tsx src/core-modules/02-crypto-module.ts",
+    "03": "tsx src/core-modules/03-os-module.ts",
+    "04": "tsx src/core-modules/04-path-module.ts",
+    "05": "tsx src/core-modules/05-timers-module.ts",
+    "06": "tsx src/core-modules/06-callback-promises-async-await-module.ts",
+    "07": "tsx src/core-modules/07-fs-module.ts",
+    "08": "tsx src/core-modules/08-buffers.ts",
+    "09": "tsx src/core-modules/09-url-module.ts",
+    "10": "tsx src/core-modules/10-event-emitter.ts",
+    "11": "tsx src/core-modules/11-streams.ts",
+    "http1": "tsx src/http-module/01-basic-http-server.ts",
+    "basic-routing": "tsx src/http-module/02-basic-routing.ts",
+    "reading-body": "tsx src/http-module/03-reading-body.ts",
+    "json-response": "tsx src/http-module/04-json-response.ts",
+    "external-api-calls": "tsx src/http-module/05-external-api-calls.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
