@@ -1,0 +1,3 @@
+-- null -> unknwon / missing values
+-- empty string ->> known but contains 0 characters
+-- zero -> actual numeric value of 0
