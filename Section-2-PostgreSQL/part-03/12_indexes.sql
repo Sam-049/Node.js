@@ -1,0 +1,1 @@
+--- Indexes helps postgres find rows faster
